@@ -43,3 +43,16 @@ def palindrom (sslowo):
         print(f"Podane słowo {sslowo} nie jest palindromem.")
 
 palindrom("zapiekanka")
+
+print("3 sposób - lepiej tak?")
+def pali(word: str):
+    return print(word == word [::-1]) 
+    
+pali("12  mm  21")
+
+print("4 sposób - czy tak?")
+def pali(word: str):
+    return word == word [::-1]
+  
+print(pali("123abc"))
+print(pali("12  mm  21"))
