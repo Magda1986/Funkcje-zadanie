@@ -1,4 +1,33 @@
+print ("Nowy sposób")
+def palindrome(s):
+    r = "".join(reversed(s))
+    print (s == r)
+     
+
+palindrome("!@mna, ")
+
+
+
+
 print("1 sposób")
+def pali(word: str):
+    return print(word == word [::-1]) 
+    
+pali("12  mm  21")
+
+
+print("2 sposób")
+def pali(word: str):
+    return word == word [::-1]
+  
+print(pali("123abc"))
+print(pali("12  mm  21"))
+print(pali("!!,?/   "))
+
+
+
+
+print("3 sposób")
 slowo = "kajak"
 lista1=[]
 lista2=[]
@@ -21,7 +50,7 @@ elif lista1 != lista2:
 
 
 
-print("2 sposób")
+print("4 sposób")
 def palindrom (sslowo):
     """
         Function, checks if a given word is a palindrome.
@@ -44,15 +73,4 @@ def palindrom (sslowo):
 
 palindrom("zapiekanka")
 
-print("3 sposób - lepiej tak?")
-def pali(word: str):
-    return print(word == word [::-1]) 
-    
-pali("12  mm  21")
 
-print("4 sposób - czy tak?")
-def pali(word: str):
-    return word == word [::-1]
-  
-print(pali("123abc"))
-print(pali("12  mm  21"))
