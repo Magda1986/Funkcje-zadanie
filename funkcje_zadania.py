@@ -1,3 +1,20 @@
+print ("Zadanie: Palindrom")
+
+
+def palindrome(word):
+    word = word.lower()
+    drow = "".join(reversed(word))
+  
+    if word.isalnum():
+        print("Podane słowo jest ok")
+        print (word == drow)
+    else: 
+        print("Podane słowo posiada niedozwolone znaki specjalne")
+
+palindrome("!Kajak")
+
+print("-----------------------------------------------------------------")
+
 print ("Nowy sposób")
 def palindrome(s):
     r = "".join(reversed(s))
