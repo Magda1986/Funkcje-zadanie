@@ -1,3 +1,38 @@
+print ("Zadanie: Palindrom")
+
+
+def palindrome(text):
+    text = text.lower()
+    signs = ""
+    for s in text:
+        if s.isalnum():
+            signs += s
+    return signs == signs[::-1]  
+
+print(palindrome("!Kajak"))
+print(palindrome("!Kobyła Ma Mały bok?!"))
+print(palindrome("to nie jest palindrom"))
+
+
+print("-----------------------------------------------------------------")
+
+print ("Zadanie: Palindrom")
+
+
+def palindrome(word):
+    word = word.lower()
+    drow = "".join(reversed(word))
+  
+    if word.isalnum():
+        print("Podane słowo jest ok")
+        print (word == drow)
+    else: 
+        print("Podane słowo posiada niedozwolone znaki specjalne")
+
+palindrome("!Kajak")
+
+print("-----------------------------------------------------------------")
+
 print ("Nowy sposób")
 def palindrome(s):
     "s".isalpha()
