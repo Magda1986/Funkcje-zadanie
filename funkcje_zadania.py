@@ -1,12 +1,10 @@
 print ("Nowy sposób")
 def palindrome(s):
+    "s".isalpha()
     r = "".join(reversed(s))
     print (s == r)
      
-
-palindrome("!@mna, ")
-
-
+palindrome("55kajak o kajak")
 
 
 print("1 sposób")
